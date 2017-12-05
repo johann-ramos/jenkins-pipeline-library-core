@@ -1,0 +1,59 @@
+<h1>Dump Environment</h1>
+
+<p>
+    This lets you dump the current information stored in the <b>env</b> object. <br>
+    The <b>env</b> object contains all system environment variables and the Jenkins injected values. <br>
+</p>
+
+<h2>How to use</h2>
+
+<p>
+    Below is an example how you can use the change dsl method from a Jenkins pipeline.
+</p>
+
+<p>
+<pre style="background:rgba(238,238,238,0.92);color:#000"><span style="font-weight:700">@Library</span>([<span style="color:#093">'stpl-pipeline-core'</span>]) _
+    
+    node {
+        dumpEnvironment()
+    }
+    </pre>
+</p>
+<p>
+    Example output:
+    <pre style="background:#000;color:#f8f8f8">_=/usr/bin/env
+    [Pipeline] echo
+    pipelineSupport=solo-pipeline-support
+    [Pipeline] echo
+    seedFolder=seed-jobs
+    [Pipeline] echo
+    bitbucketCredentialsId=SOLO_BUILDER
+    [Pipeline] echo
+    FP_NO_HOST_CHECK=NO
+    [Pipeline] echo
+    SYSTEMSTATE_PATH=C:\RESWisdom\SystemState
+    [Pipeline] echo
+    Pri-Tems=10.21.158.30
+    [Pipeline] echo
+    SYSTEMDRIVE=C:
+    [Pipeline] echo
+    PWD=/e/SLU_Workspace/jenkins1.1/ed9019c7/workspace/masterca39ba90
+    [Pipeline] echo
+    JAVA_HOME=D:\SLU\Java\jdk1.8.0_92
+    [Pipeline] echo
+    HUDSON_URL=https://q-jenkins-m01.development.nl.eu.abnamro.com:9443/
+    [Pipeline] echo
+    USERPROFILE=C:\Users\TA0860Q
+    [Pipeline] echo
+    JOB_NAME=SOLO/Examples/declarative-pipeline-mb/master
+    [Pipeline] echo
+    bitbucketUrl=https://p-bitbucket.nl.eu.abnamro.com:7999/scm
+    [Pipeline] echo
+    BUILD_DISPLAY_NAME=#9
+    [Pipeline] echo
+    BUILD_ID=9
+    [Pipeline] echo
+    JENKINS_URL=https://q-jenkins-m01.development.nl.eu.abnamro.com:9443/
+    </pre>
+
+</p>

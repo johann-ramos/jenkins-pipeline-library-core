@@ -1,0 +1,25 @@
+<h1>Execute Shell Command</h1>
+
+<p>
+    Lets you run a shell command without having to worry about the platform.
+    It will return the stdout from the command.
+    That can be a multi-line response, you have to deal with that yourself.
+</p>
+
+<h2>How to use</h2>
+
+<p>
+    Below is an example how you can use the change dsl method from a Jenkins pipeline.
+</p>
+
+<p>
+<pre style="background:rgba(238,238,238,0.92);color:#000"><span style="font-weight:700">@Library</span>([<span style="color:#093">'stpl-pipeline-core'</span>]) _
+
+node {
+    <span style="font-weight:700">def</span> someName <span style="color:#00f">=</span> <span style="color:#093">'ABC'</span>
+    <span style="font-weight:700">def</span> command <span style="color:#00f">=</span> <span style="color:#093">"echo $ABC"</span> <span style="color:#06f;font-style:italic">// platform independent command</span>
+    <span style="font-weight:700">def</span> response <span style="color:#00f">=</span> executeShellCommand(command) <span style="color:#06f;font-style:italic">// will work on Linux and Windows alike</span>
+    echo <span style="color:#093">"response=$response"</span>
+}
+</pre>
+</p>

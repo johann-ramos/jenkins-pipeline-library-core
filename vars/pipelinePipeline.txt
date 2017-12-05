@@ -1,0 +1,15 @@
+<h1>Pipeline pipeline</h1>
+
+<p>
+    Currently this pipeline pipeline does the following things:
+    <ul>
+        <li>GroovyDocs: generate documentation</li>
+        <li>Git tagging: Each build will generate a tag in Git</li>
+    </ul>
+</p>
+
+<h2>How to use</h2>
+
+<p>
+    Check bitbucket for documentation: https://p-bitbucket.nl.eu.abnamro.com:7999/scm/stpl/stpl-pipeline-pipeline.git
+</p>
