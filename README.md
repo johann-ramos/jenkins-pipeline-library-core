@@ -23,7 +23,7 @@ For more information, read the [Docs](docs/) or [Contrubution Guide](docs/inners
 
 ## Standards & Guidelines
 
-This pipeline attempts to implement and honor the [best practices from Cloudbees](JENKINS_PIPELINE_BEST_PRACTICES,md) regarding Jenkins Pipelines.
+This pipeline attempts to implement and honor the [best practices from Cloudbees](docs/innersourcing/JENKINS_PIPELINE_BEST_PRACTICES.md) regarding Jenkins Pipelines.
 
 For more information on how Jenkins Pipeline's and Shared Libraries work, [visit this excellent site](https://joostvdg.github.io/).
 
